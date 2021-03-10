@@ -1,5 +1,5 @@
 # exercicio-clone-google
 
-![imag1](imag1.png)
+![img1](img1.jpg)
 
-![imag2](imag2.png)
+![img2](img2.jpg)
