@@ -2,14 +2,49 @@ html,
 body {
     margin: 0;
     padding: 0;
+    scrollbar-face-color: #9e4343;
+    scrollbar-track-color: #00FF00;
+}
+
+#pesquisar {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #9090904f;
+}
+
+.container {
+    width: 1100px;
+    margin-right: 10px;
+    height: 100vh;
+    margin-top: 160px;
+    margin-left: 25px;
+    display: flex;
+}
+
+article {
+    flex: 2;
+}
+
+aside {
+    flex: 1;
 }
 
 .menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 5px;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .ml-3 {
@@ -20,9 +55,35 @@ body {
     margin-left: 20px;
 }
 
+nav {
+    display: flex;
+    height: 58px;
+    padding: 0;
+    margin-left: 20px;
+    justify-content: start;
+}
+
 .link {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+    color: #5f6368;
+    display: flex;
+}
+
+.option1 {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.option2 {
+    display: flex;
+    flex: 2;
+    margin-right: 20px;
+}
+
+.wrap {
+    white-space: nowrap;
 }
 
 .link a {
@@ -32,6 +93,10 @@ body {
 
 .link a:hover {
     text-decoration: 1px underline;
+}
+
+.area-icone {
+    display: flex;
 }
 
 .icone {
@@ -72,13 +137,11 @@ header i {
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
+    width: 150px;
 }
 
 img {
-    width: 375px;
-    height: 150px;
+    width: 100%;
 }
 
 .row {
@@ -120,8 +183,10 @@ img {
 
 form {
     display: flex;
+    flex: 2;
     justify-content: center;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 input {
@@ -148,11 +213,37 @@ button,
     box-shadow: 0px 0px 2px #a4a4a5;
 }
 
-#footer {
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-link,
+.card-link a {
+    text-decoration: none;
+    color: #5f6368;
+}
+
+.card-title,
+.card-title a {
+    font-size: 20px;
+    color: #1a0dab;
+    text-decoration: none;
+    margin: 5px 0px;
+}
+
+.card-title a:hover {
+    margin: 5px 0px;
+    text-decoration: underline;
+}
+
+.card-text {
+    color: #5f6368;
+}
+
+footer {
     background: #f2f2f2;
-    bottom: 0;
-    left: 0;
-    position: fixed;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -191,8 +282,23 @@ button,
     white-space: nowrap;
 }
 
+@media (max-width:800px) {
+    .area-icone {
+        display: none;
+    }
+}
+
 @media (max-width:660px) {
     #footer .row {
+        justify-content: center;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .option2 {
+        display: none;
+    }
+    .option1 {
         justify-content: center;
     }
 }
@@ -207,11 +313,23 @@ button,
     .flex-1 {
         flex: 1;
     }
+    .ml-1 {
+        margin-left: 10px;
+    }
+    .ml-3 {
+        margin-left: 10px;
+    }
     .btn,
     .btn a {
         font-size: 12px;
         text-align: center;
         padding: 5px;
+    }
+    aside {
+        display: none;
+    }
+    .container {
+        margin-top: 230px;
     }
 }
 
@@ -219,14 +337,23 @@ button,
     .ml-3 {
         margin-left: 10px;
     }
-    .logo img {
-        max-width: 275px;
-    }
     .menu {
         margin-right: 10px;
     }
     .busca {
         width: 250px;
+    }
+    .container {
+        margin-top: 230px;
+        margin-bottom: 400px;
+    }
+    #footer {
+        font-size: 10px;
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
     }
 }
 
@@ -243,5 +370,14 @@ button,
     .regiao {
         padding: 5px;
         font-size: 12px;
+    }
+    .container {
+        margin-top: 230px;
+        margin-bottom: 300px;
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
     }
 }

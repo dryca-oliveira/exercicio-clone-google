@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" lang="pt-br" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scale=no">
+    <link href="../assets/css/resultado.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title> Clone Google</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function() {
+            var x = $(this).scrollTop();
+            $('#header').css('box-shadow', '0 1px 6px 0 rgb(32 33 36 / 28%)');
+            if (x < 100) {
+                $('#header').css('box-shadow', 'none');
+            } else {
+                $('#header').css('box-shadow', '0 1px 6px 0 rgb(32 33 36 / 28%)');
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <header id="header">
+        <div class="menu">
+            <div class="logo">
+                <a href="https://www.google.com.br/search?q=Dr.+Wu+Lien-teh&oi=ddle&ct=174786755&hl=pt-BR&sa=X&ved=0ahUKEwjl9tbj76XvAhW3GrkGHRGLDScQPQgC&biw=1366&bih=568">
+                    <img src="../assets/img/logo.png" alt="logo" title="142º anivesário do médico Wu Lien-teh">
+                </a>
+            </div>
+            <form action="pages/resultado.html" method="get">
+                <div class="row">
+                    <div class="busca">
+                        <div class="icon-left">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input autofocus type="search" placeholder="resultado" name="search" id="search">
+                        <div class="icon-right">
+                            <i class="fas fa-keyboard"></i>
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="area-icone">
+                <div class="icone ml-3">
+                    <i class="fas fa-ellipsis-v fa-sm"></i>
+                    <i class="fas fa-ellipsis-v fa-sm"></i>
+                    <i class="fas fa-ellipsis-v fa-sm mr-1"></i>
+                </div>
+                <button class="btn ml-3">Fazer login</button>
+            </div>
+        </div>
+        <nav>
+            <div class="option1">
+                <div class="link">
+                    <a href="">Todas</a>
+                </div>
+                <div class="link ml-3">
+                    <a href=""><i class="far fa-newspaper"></i>Notícias</a>
+                </div>
+                <div class="link ml-3 ">
+                    <a href=""><i class="fas fa-image"></i>Imagens</a>
+                </div>
+                <div class="link ml-3">
+                    <a href=""><i class="fab fa-youtube"></i>Vídeos</a>
+                </div>
+
+            </div>
+            <div class="option2">
+                <div class="link ml-3">
+                    <a href="">Ferramentas</a>
+                </div>
+                <div class="link ml-3">
+                    <a href="">Configurações</a>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <section id="pesquisar">
+        <div class="container">
+            <article>
+                <div class="card">
+                    <div class="card-link"> <a href="">loremipsum.com.br > Lorem ipsum dolor</a> </div>
+                    <div class="card-title">
+                        <a href="">Lorem, ipsum dolor.</a>
+                    </div>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perspiciatis et atque labore. Provident delectus veniam inventore corrupti quibusdam esse</div>
+                </div>
+                <div class="card">
+                    <div class="card-link"> <a href="">loremipsum.com.br > Lorem ipsum dolor</a> </div>
+                    <div class="card-title">
+                        <a href="">Lorem, ipsum dolor.</a>
+                    </div>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perspiciatis et atque labore. Provident delectus veniam inventore corrupti quibusdam esse</div>
+                </div>
+                <div class="card">
+                    <div class="card-link"> <a href="">loremipsum.com.br > Lorem ipsum dolor</a> </div>
+                    <div class="card-title">
+                        <a href="">Lorem, ipsum dolor.</a>
+                    </div>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perspiciatis et atque labore. Provident delectus veniam inventore corrupti quibusdam esse</div>
+                </div>
+                <div class="card">
+                    <div class="card-link"> <a href="">loremipsum.com.br > Lorem ipsum dolor</a> </div>
+                    <div class="card-title">
+                        <a href="">Lorem, ipsum dolor.</a>
+                    </div>
+                    <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perspiciatis et atque labore. Provident delectus veniam inventore corrupti quibusdam esse</div>
+                </div>
+            </article>
+            <aside>
+
+            </aside>
+        </div>
+
+
+    </section>
+
+    <footer id="footer">
+
+        <div class="regiao">
+            <a href="">Brasil</a>
+        </div>
+        <div class="row">
+            <div class="menu-footer">
+                <div class="info"> <a href="">Sobre</a> </div>
+                <div class="info"> <a href="">Pubicidade</a> </div>
+                <div class="info"> <a href="">Negócios</a> </div>
+                <div class="info"> <a href="">Como funciona</a> </div>
+            </div>
+            <div class="menu-footer">
+                <div class="info"> <a href="">Negócios</a> </div>
+                <div class="info"> <a href="">Como funciona</a> </div>
+                <div class="info"> <a href="">Configurações</a> </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
